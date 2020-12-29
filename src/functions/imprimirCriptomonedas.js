@@ -1,7 +1,7 @@
 import obtenerCriptomonedas from "./obtenerCriptomonedas";
 import selectCriptomonedas from "./selectCriptomonedas";
 
-function consultarCriptomonedas() {
+function imprimirCriptomonedas() {
   // Consulta API de criptomonedas
   const url = `https://min-api.cryptocompare.com/data/top/mktcapfull?limit=10&tsym=USD`;
 
@@ -11,4 +11,4 @@ function consultarCriptomonedas() {
     .then((criptomonedas) => selectCriptomonedas(criptomonedas));
 }
 
-export default consultarCriptomonedas;
+export default imprimirCriptomonedas;

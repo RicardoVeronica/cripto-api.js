@@ -1,8 +1,10 @@
 /*
  * Consumir API de criptomonedas con JS
  * */
-import consultarCriptomonedas from "./functions/consultarCriptomonedas";
+import imprimirCriptomonedas from "./functions/imprimirCriptomonedas";
+import eventListeners from "./eventListeners";
 
 window.onload = () => {
-  consultarCriptomonedas();
+  imprimirCriptomonedas();
+  eventListeners();
 };
